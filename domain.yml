@@ -1,0 +1,149 @@
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true
+intents:
+- saludo
+- llenar_datos
+- lastN
+- firsN
+- feedback
+- greet
+- inform
+- subscribe
+- guardar
+- Feedback
+- FirstName
+- LastName
+- info_servicios
+- domotica
+- comunicacion
+- affirm
+- informacion
+- deny
+- software
+- contabilidad
+- degativo
+- marketing
+- menu
+- sub_menu
+entities:
+- numero_menu
+- numero_sub_menu
+slots:
+  email:
+    type: unfeaturized
+    influence_conversation: false
+  nombre:
+    type: unfeaturized
+    influence_conversation: false
+  apellido:
+    type: unfeaturized
+    influence_conversation: false
+  comentario:
+    type: unfeaturized
+    influence_conversation: false
+  requested_slot:
+    type: unfeaturized
+    influence_conversation: false
+responses:
+  utter_ask_email:
+  - text: "What is your email address? \n"
+  utter_subscribed:
+  - text: "Check your inbox at {email} in order to finish subscribing to the newsletter!\n"
+  - text: You're all set! Check your inbox at {email} to confirm your subscription.
+  utter_ask_nombre:
+  - text: "Ingrese su nombre\n"
+  utter_ask_apellido:
+  - text: "Ingrese su apellido\n"
+  utter_ask_comentario:
+  - text: "Ingrese su comentario\n"
+  utter_finaliza:
+  - text: Listo
+  - text: Tu datos son {nombre} esta bien!
+  utter_guardar:
+  - text: Guardar
+  utter_Pa1uno:
+  - text: "!Hola¡\n¿Cómo te puedo ayudar?\n 1. Quiero información sobre la empresa\n\
+      \ 2. Quiero información sobre los servicios\n 3. Quiero una cotización de un\
+      \ software.\n"
+  utter_Pa1dos:
+  - text: Un gusto, Somos una empresa de desarrollo de Software y servicios digitales.
+      Buscamos mejorar y simplificar tu trabajo con plataformas tecnológicas
+  utter_Pa1tres:
+  - text: "En esta pagina podrás revisar todas las tecnologías ofertadas:\n https://soft.progresarec.com\
+      \ \n ¿Te puedo ayudar en algo más?\n 1. Si \n2. No"
+  utter_Pa1cuatro:
+  - text: ¿Te puedo ayudar en algo más?
+  utter_Pa1cinco:
+  - text: De acuerdo, esperamos que tu experiencia con nosotros te haya ayudado a
+      solventar tus dudas
+  utter_servicios:
+  - text: "Un gusto, Estos son nuestros servicios. Necesitas información sobre:\n\
+      \ 1. Software\n 2. Domótica\n 3. Comunicación\n 4. Contabilidad\n 5. Marketing\
+      \ Digital\n 6. ChatBot\n 7. Facturación Electrónica\n 8. Comercio Electrónico\n\
+      \ 9. Paqueteria y viajes"
+  utter_software:
+  - text: "Nos adaptamos a todo tipo de empresa y así aprovechar el potencial del\
+      \ sistema, utilizando herramientas de alta eficacia. Dando como resultado un\
+      \ sistema confiable y adaptable. \n ¿Te puedo ayudar en algo más?\n 1. Si \n\
+      2. No"
+  utter_domotica:
+  - text: "Automatizamos tu vivienda o edificación de cualquier tipo, aportando servicios\
+      \ de gestión energética, seguridad, bienestar y comunicación, ademas pueden\
+      \ estar integrados por medio de redes interiores y exteriores de comunicación,\
+      \ cableadas o inalámbricas, y cuyo control goza de cierta ubicuidad dentro y\
+      \ fuera del hogar.\n ¿Te puedo ayudar en algo más?\n 1. Si \n2. No"
+  utter_comunicacion:
+  - text: "Es un medio de comunicación en la red que ofrece una variedad de contenido\
+      \ informativo y formativo, desde diversas perspectivas: política, economia,\
+      \ diplomacia, defensa, cultura, etc...\n Para enviarnos tu noticia puedes ingresar\
+      \ a nuestra pagina:\n https://orquideadigital.com \n ¿Te puedo ayudar en algo\
+      \ más?\n 1. Si \n2. No"
+  utter_contabilidad:
+  - text: "Somos una empresa que te ayuda con cada proceso contable, desarrollamos\
+      \ herramientas rápidas y confiables para tu empresa\n ¿Te puedo ayudar en algo\
+      \ más?\n 1. Si \n2. No"
+  utter_Pa6uno:
+  - text: ¿Deseas saber más sobre nuestros planes?
+  utter_7uno:
+  - text: ¿Desea verificar y programar tus publicaciones?
+  utter_7dos:
+  - text: "Ingresa tus datos en nuestra plataforma y asi revisar, modificar y planificar\
+      \ tus publicaciones en varias redes sociales:\n https://progresarec.com/contacto/"
+  utter_marketing:
+  - text: "Buscamos respuestas y establecer relaciones duraderas y en beneficio mutuo\
+      \ con el cliente. Utilizando los nuevos medios y canales publicitarios tecnológicos\
+      \ y digitales como internet, el móvil o el IoT. Gracias al poder de la tecnología\
+      \ permite crear productos y servicios personalizados y medir todo lo que ocurre\
+      \ para mejorar la experiencia\n Si deseas tener información sobre nuestra plataforma\
+      \ puedes visitar nuestra página: \n https://progresarec.com/marketing-digital/\
+      \ \n¿Te puedo ayudar en algo más?\n 1. Si \n2. No"
+  utter_incorrecta:
+  - text: No escogio ninguna opcion validad
+  utter_cotizacion:
+  - text: Listo, enseguida le ayudamos con la cotizacion....
+actions:
+- '...'
+- utter_greet
+- utter_saludo
+- utter_subscribed
+- utter_firstN
+- utter_lastN
+- utter_feedback
+- utter_finaliza
+- validate_action_guardar
+- utter_informacion
+- validate_restaurant_form
+- action_menu_uno
+- action_menu_dos
+forms:
+  newsletter_form:
+    email:
+    - type: from_text
+  datos_form:
+    apellido:
+    - type: from_text
+    comentario:
+    - type: from_text
+    nombre:
+    - type: from_text

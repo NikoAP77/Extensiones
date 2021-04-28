@@ -1,0 +1,66 @@
+[
+  {
+    "text": "1",
+    "intent": "informacion",
+    "intent_prediction": {
+      "name": "domotica",
+      "confidence": 0.16187603771686554
+    }
+  },
+  {
+    "text": "2",
+    "intent": "info_servicios",
+    "intent_prediction": {
+      "name": "domotica",
+      "confidence": 0.16187603771686554
+    }
+  },
+  {
+    "text": "2",
+    "intent": "negativo",
+    "intent_prediction": {
+      "name": "domotica",
+      "confidence": 0.16187603771686554
+    }
+  },
+  {
+    "text": "1",
+    "intent": "afirmativo",
+    "intent_prediction": {
+      "name": "domotica",
+      "confidence": 0.16187603771686554
+    }
+  },
+  {
+    "text": "1",
+    "intent": "software",
+    "intent_prediction": {
+      "name": "domotica",
+      "confidence": 0.16187603771686554
+    }
+  },
+  {
+    "text": "3",
+    "intent": "comunicacion",
+    "intent_prediction": {
+      "name": "domotica",
+      "confidence": 0.16187603771686554
+    }
+  },
+  {
+    "text": "4",
+    "intent": "contabilidad",
+    "intent_prediction": {
+      "name": "domotica",
+      "confidence": 0.16187603771686554
+    }
+  },
+  {
+    "text": "5",
+    "intent": "marketing",
+    "intent_prediction": {
+      "name": "domotica",
+      "confidence": 0.16187603771686554
+    }
+  }
+]

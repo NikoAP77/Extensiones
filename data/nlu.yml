@@ -1,0 +1,156 @@
+version: "2.0"
+nlu:
+- intent: greet
+  examples: |
+    - Hi
+    - Hey!
+    - Hallo
+    - Good day
+    - Good morning
+    - hey
+    - hello
+    - hi
+    - hello there
+    - good morning
+    - good evening
+    - moin
+    - hey there
+    - let's go
+    - hey dude
+    - goodmorning
+    - goodevening
+    - good afternoon
+- intent: subscribe
+  examples: |
+    - I want to get the newsletter
+    - Can you send me the newsletter?
+    - Can you sign me up for the newsletter?
+- intent: inform
+  examples: |
+    - My email is example@example.com
+    - random@example.com
+    - Please send it to anything@example.com
+    - Email is something@example.com
+- intent: llenar_datos
+  examples: |
+    - completar formulario
+    - llenar formulario
+    - LLENAR FORMULARIO
+- intent: saludo
+  examples: |
+    - hola
+    - Buenas
+    - buenos dias
+    - buenas tardes
+    - buenas noches
+    - Hola
+    - Buenos dias
+    - Buenas tardes
+    - HOLA
+    - HOla
+- intent: FirstName
+  examples: |
+    - Ashish
+    - Rahul
+    - Apneet
+    - awakash
+- intent: LastName
+  examples: |
+    - anazco
+    - pereira
+    - gonzales
+    - yupanki
+- intent: Feedback
+  examples: |
+    - it was great experience
+    - Amazing tutorial
+    - best session
+- intent: guardar
+  examples: |
+    - guardar
+    - listo
+- intent: informacion
+  examples: |
+    - Quiero informacion sobre la empresa
+    - Mas informacion de la empresa
+    - Saber mas de la empresa
+    - Necesito informacion
+    - informacion sobre la empresa
+    - información sobre la empresa
+    - informacion de la empresa
+    - informacion
+- intent: info_servicios
+  examples: |
+    - Quiero información sobre los servicios
+    - Saber de los servicios
+    - Informacion de los servicios que ofrece
+    - informacion sobre los servicios
+    - quiero informacion sobre los servicios
+    - quiero informacion de los servicios
+    - informacion de los servicios
+    - informacion sobre servicios
+- intent: deny
+  examples: |
+    - No
+    - No, gracias
+    - Not
+    - no
+- intent: affirm
+  examples: |
+    - "1"
+    - Si
+    - Si, gracias
+    - Yes
+- intent: software
+  examples: |
+    - Software
+    - Quiero saber sobre software
+    - Mas sobre software
+    - software
+- intent: domotica
+  examples: |
+    - Domotica
+    - Quiero saber sobre domotica
+    - Mas sobre domotica
+    - domotica
+- intent: comunicacion
+  examples: |
+    - Comunicacion
+    - Quiero saber sobre comunicacion
+    - Mas sobre comunicacion
+    - comunicacion
+- intent: contabilidad
+  examples: |
+    - Contabilidad
+    - Quiero saber sobre contabilidad
+    - Mas sobre contabilidad
+    - contabilidad
+- intent: marketing
+  examples: |
+    - marketing
+    - marketing digital
+    - Quiero saber sobre marketing
+    - Mas sobre marketing
+    - informacion sobre marketing
+    - Marketing
+
+- intent: menu
+  examples: |
+    - [1](numero_menu)
+    - [2](numero_menu)
+    - [3](numero_menu)
+
+- intent: sub_menu
+  examples: |
+    - [4](numero_sub_menu)
+    - [5](numero_sub_menu)
+
+- regex: numero_menu
+  examples: |
+    - ^[1-3]$
+
+- regex: numero_sub_menu
+  examples: |
+    - \d{0,2}
+
+
